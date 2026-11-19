@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta 
+      name="description"
+      content="A beginner HTML website with examples of text, links, lists, tables, forms."/>
+      
+    <title>My First HTML Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>My First HTML Page</h1>
+      <p>I'm learning how to build a website in HTML</p>
+     
+      <nav>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="about.html">About Page</a>
+      </nav>
+      
+    </header>
+
+    <main>
+      <section id="about">
+        <!--Main course content-->
+        <h3>About This course</h3>
+        <p>HTML gives <strong>structure</strong> to every web page.</p>
+        <p>We wiill learn everthing <em>step by step</em>.</p>
+        <h2>TOPIC We WIll Learn</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JaVaScript</li>
+        </ul>
+        <h4>My Learning Step</h4>
+        <ol>
+          <li>Write the HTML</li>
+          <li>Save the file</li>
+          <li>Check the browser</li>
+        </ol>
+        <p>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+            target="_balnk"
+            rel="noopener noreferrer"
+            >Read the MDN HTML guid ></a
+          >
+        </p>
+      </section>
+      <h2>Technology Overview</h2>
+      <table>
+        <caption>
+          Core web technologise
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Technology</th>
+            <th scope="col">Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Structure the content</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Style the page</td>
+          </tr>
+          <tr>
+            <td>JaVaScript</td>
+            <td>Adds interactivity</td>
+          </tr>
+        </tbody>
+      </table>
+      <section id="contact">
+        <h2>Conract Me</h2>
+        <form action="#" method="post">
+          <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="name" required />
+          </p>
+          <p>
+            <label for="topic">Topic:</label>
+            <select id="topic" name="topic">
+              <option value="">Chose a topic</option>
+              <option value="website">Website feedback</option>
+              <option value="html">HTML</option>
+            </select>
+          </p>
+          <p>
+            <label for="message">Message</label><br/>
+            <textarea id="message" name="message" row="5" required></textarea>
+          </p>
+          <p>
+            <input type="checkbox" id="updates"
+            name="updates"/>
+            <label for="updates">Send me website updates</label>
+          </p>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+    <footer>Built while learning HTML</footer>
+  </body>
+</html>
